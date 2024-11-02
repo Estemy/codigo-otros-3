@@ -12,12 +12,19 @@
 <body>
 
   <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
-      <h1>Lista de productos </h1>
+    <!-- Añadí una etiqueta <label> para mejorar la accesibilidad, ya que describe el propósito del campo de entrada de texto para los lectores de pantalla. -->
+      <label for="input-filtro">Filtro de productos</label>
+      <!-- Añadí el atributo id="input-filtro" para vincularlo con el <label> y mejorar la accesibilidad y la claridad en el código. -->
+      <input id="input-filtro" type="text" placeholder="Selecciona un color o tipo">
+       <!-- Añadí id="boton-filtro" en el botón para que sea más fácil identificarlo y vincularlo con scripts en JavaScript -->
+      <button id="boton-filtro">Filtrar</button>
+
+      
+      <h1>Lista de productos</h1>
       <div id="lista-de-productos">
-    </div>
+      </div>
   </div>
+  
   <script src="../filtro.js"></script>
 </body>
 

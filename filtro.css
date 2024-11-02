@@ -1,24 +1,40 @@
+/* Estilos para el input de filtro */
 input {
   width: 500px;
   height: 40px;
   font-size: 18px;
+  padding: 5px; /* Añadí padding para mejorar el espacio interno y que el texto no quede tan pegado a los bordes */
+  margin-bottom: 15px;/* Añadí margen inferior para separar el input de otros elementos y mejorar la legibilidad */
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+
+/* Contenedor de lista de productos */
 #lista-de-productos {
-  display: flex
+  display: flex; 
+  flex-wrap: wrap;/* Añadí flex-wrap: wrap para que los productos puedan ajustarse en varias filas si el espacio es limitado */
+  gap: 10px;  /* Añadí gap para espaciar los productos de manera uniforme */
 }
 
+/* Estilos para cada producto en la lista */
 .producto {
   width: 200px;
   height: 200px;
-  margin: 10px;
-  border: 2px solid black;
+  padding: 10px; /* Añadí padding para un mejor espacio interno y que el contenido se vea más centrado */
+  padding: 10px;
+  border: 2px solid black; /* Añadí un borde redondeado para dar una apariencia más moderna */
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+/* Estilos para las imágenes dentro de cada producto */
 .producto img {
   width: 70%;
-  height: auto
+  height: auto;
+  border-radius: 4px; /* Añadí border-radius para redondear ligeramente los bordes de las imágenes y hacerlas visualmente más atractivas */
 }
